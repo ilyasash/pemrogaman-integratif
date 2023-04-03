@@ -2,7 +2,7 @@ const grpc = require('grpc');
 const protoLoader = require('@grpc/proto-loader');
 const mysql = require('mysql2');
 
-const PROTO_PATH = './service_def.proto';
+const PROTO_PATH = './crud.proto';
 
 const packageDefinition = protoLoader.loadSync(PROTO_PATH);
 const userProto = grpc.loadPackageDefinition(packageDefinition).User;
